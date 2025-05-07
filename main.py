@@ -33,7 +33,7 @@ def extract_products(url, idx):
 
 
 def run_in_parallel(values):
-    with ThreadPoolExecutor() as executor:
+    with ThreadPoolExecutor(max_workers=2) as executor:
         executor.map(lambda pair: extract_products(pair[1], pair[0]), enumerate(values))
 
 

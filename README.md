@@ -26,6 +26,8 @@ The output is saved in a `Products` folder, with each file named sequentially as
   was not implemented due to time constraints.
 * **Device Limitations**: Running the crawler on too many URLs simultaneously may strain devices with limited processing
   power.
+* **Generalisation**: I could have used LLMs like OpenAI API to fetch product links from HTML instead of regex to have a
+  generalised procedure.
 
 ## Parameters
 
@@ -36,9 +38,11 @@ The output is saved in a `Products` folder, with each file named sequentially as
 1. No proxy support.
 2. Limited URL input due to hardware constraints.
 3. No headless mode for reduced resource consumption.
+4. Generalised approach has not been taken.
 
 ## Future Enhancements
 
 1. Add proxy support for better scalability.
 2. Implement headless mode for resource efficiency.
 3. Optimize the script for parallel processing to handle more URLs efficiently.
+4. LLMs could be used to fetch product URLs in a generalised manner.
